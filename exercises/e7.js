@@ -15,12 +15,10 @@ export function getClientWithLeastPositiveBalance(array) {
       id = array[i].id;
     }
   }
-  if (min === 0) {
+  if (min <= 0) {
     return arr;
-  } else {
-    let arrFinal = arr.concat(array[id-1]);
-    return arrFinal;
   }
+  return arr.concat(array[id-1]);
 }
 
 // === TEST YOURSELF ===

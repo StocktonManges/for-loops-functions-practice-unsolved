@@ -7,7 +7,7 @@
 export function getClientWithGreatestBalance(array) {
   // Your code goes here...
   const arr = [];
-  var max = array[0].balance;
+  var max = 0;
   var id = 0;
   for (var i in array) {
     if (max < array[i].balance && array[i].balance !== 0) {
@@ -17,10 +17,8 @@ export function getClientWithGreatestBalance(array) {
   }
   if (max === 0) {
     return arr;
-  } else {
-    let arrFinal = arr.concat(array[id-1]);
-    return arrFinal;
   }
+  return arr.concat(array[id-1]);
 }
 
 
