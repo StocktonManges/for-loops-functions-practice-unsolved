@@ -5,7 +5,14 @@
 
 export function getClientsWithLetterInName(array, letter) {
   // Your code goes here...
-
+  var arr = [];
+  for (var i in array) {
+    var re = new RegExp(letter, 'i');
+    if (re.test(array[i].name)) {
+      arr.push(array[i].name);
+    }
+  }
+  return arr;
 }
 
 // === TEST YOURSELF ===
