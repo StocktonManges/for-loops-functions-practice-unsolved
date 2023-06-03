@@ -6,11 +6,11 @@
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
-  var arr3 = [];
-  for (var i of arr1) {
+  let arr3 = [];
+  for (let i of arr1) {
     arr3.push(i);
   }
-  for (var x of arr2) {
+  for (let x of arr2) {
     arr3.push(x);
   }
   return arr3;

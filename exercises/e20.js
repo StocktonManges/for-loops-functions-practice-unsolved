@@ -7,12 +7,12 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
-  var arrFinal = [];
-  var arrIncluded = [];
-  var arrNotIncluded = [];
-  for (var i of array) {
-    var included = false;
-    for (var x of i) {
+  let arrFinal = [];
+  let arrIncluded = [];
+  let arrNotIncluded = [];
+  for (let i of array) {
+    let included = false;
+    for (let x of i) {
       if (x === 'a') {
         included = true;
       }

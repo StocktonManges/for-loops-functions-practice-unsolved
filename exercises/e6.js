@@ -6,7 +6,7 @@
 export function getClientWithNoMoney(array) {
   // Your code goes here...
   const arr = [];
-  for (var i in array) {
+  for (let i in array) {
     if (array[i].balance === 0) {      
       arr.push(array[i].name);
     }

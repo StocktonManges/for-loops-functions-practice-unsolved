@@ -11,7 +11,7 @@
 export function getAverage(array) {
   // Your code goes here...
   let sum = 0;
-  for (let i of array) {q
+  for (let i of array) {
     sum += i;
   }
   return sum / array.length;

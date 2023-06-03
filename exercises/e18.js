@@ -5,8 +5,8 @@
 // NOTE: You can NOT use the array.join(), array.toString(), and array.replace() methods in your code
 
 export function joinToString(array, separator) {
-  var str = '';
-  for (var i in array) {
+  let str = '';
+  for (let i in array) {
     if (array[i] === array[array.length - 1]) {
       str += array[i];
     } else {

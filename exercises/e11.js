@@ -6,12 +6,12 @@
 
 export function getAllWithdrawals(array) {
   // Your code goes here...
-  var arr = [];
-  for (var i in array) {
-    var sum = 0;
+  let arr = [];
+  for (let i in array) {
+    let sum = 0;
     if (array[i].withdrawals != null) {
-      for (var i of array[i].withdrawals) {
-        sum += i;
+      for (let x of array[i].withdrawals) {
+        sum += x;
       }
       arr.push(sum);
     } else {

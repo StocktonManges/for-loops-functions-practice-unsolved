@@ -6,19 +6,13 @@
 
 export function getClientWithGreatestBalance(array) {
   // Your code goes here...
-  const arr = [];
-  var max = 0;
-  var id = 0;
-  for (var i in array) {
-    if (max < array[i].balance && array[i].balance !== 0) {
-      max = array[i].balance;
-      id = array[i].id;
+  let arr = [array[0]];
+  for (let i in array) {
+      if (array[i].balance > arr[0].balance) {
+        arr[0] = array[i];
+      }
     }
-  }
-  if (max === 0) {
-    return arr;
-  }
-  return arr.concat(array[id-1]);
+  return arr;
 }
 
 
